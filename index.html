@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            background: #172f38;
+            color: #d7dbdd;
+            cursor: pointer;
+        }
+
+        #container span {
+            float: left;
+            /* 最小宽度为2em */
+            min-width: 2em;
+            margin-right: 10px;
+        }
+
+        .center {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            font-size: 8em;
+            transform: translate(-50%, -50%);
+            /* 
+            1s ease-in 对于所有的css属性，先慢后快的变化，动画在1秒钟之内完成
+            opacity 0.7s ease-in 0.3s 对于opacity属性，先慢后快的变化，动画在0.7秒内完成，并且，整个动画延迟0.3秒后执行
+             */
+            transition: 1s ease-in, opacity 0.7s ease-in 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 用于装数字的div -->
+    <div id="container">
+
+    </div>
+
+    <div id="divCenter" class="center">
+        
+    </div>
+    <script type="text/javascript">
+	
+	</script>
+</body>
+
+</html>
